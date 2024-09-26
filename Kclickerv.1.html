@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>clickerlite</title>
+        <html lang="en">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link href="Kclickerv.1.css" rel="stylesheet" type="text/css"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    </head>
+    <body>
+    <div id ="titlearea">
+        <div id="maintitle">検討クリッカー!</div>
+
+        <div id="kentou">検討</div>
+
+        <div id="amountK">
+        </div>
+
+        <div id="klog">現在の「検討」の個数</div>
+    
+        
+        <div id="plusamountpersec"></div>
+    
+
+        <div id="persecdisp">1秒に生成される検討の数</div>
+
+        <div id ="p5">
+        </div>
+
+                   <!-- タイマー部分 -->
+     <div class ="conteiner">
+        ゲームを始めてから
+        <div id="timer">00:00,000</div>
+     </div>
+
+     <div>検討が1兆個集まればゲームクリア。60分制。</div>
+    
+     <div id =handybuttons>
+       <div id="plus1">
+        <form id ="form1" name="test_form" onsubmit="return AddTable();">
+                <input id ="plus1b" type="button" value="+1" onclick="plus1()">
+        </form>
+        </div>
+
+        <div id="plus5">
+            <form id ="form5" name="test_form" onsubmit="return AddTable();">
+                    <input id="form5b" type="button" value="+5" onclick="plus5()">
+            </form>
+         </div>
+
+        
+         <div id="plus100">
+            <form id ="form100" name="test_form" onsubmit="return AddTable();">
+                    <input id="form100b" type="button" value="+100" onclick="plus100()">
+            </form>
+            </div>        
+
+         <div id="plus1000">
+             <form id ="form1000" name="test_form" onsubmit="return AddTable();">
+                    <input id="form1000b" type="button" value="+1000" onclick="plus1000()">
+            </form>
+        </div>   
+
+        <div id="plus10000">
+            <form id ="form10000" name="test_form" onsubmit="return AddTable();">
+                   <input id="form10000b" type="button" value="+10000" onclick="plus10000()">
+           </form>
+       </div>   
+
+       <div id="plus100000">
+        <form id ="form100000" name="test_form" onsubmit="return AddTable();">
+               <input id="form100000b" type="button" value="+100000" onclick="plus100000()">
+       </form>
+         </div>  
+
+      <div id="plus1000000">
+        <form id ="form1000000" name="test_form" onsubmit="return AddTable();">
+           <input id="form1000000b" type="button" value="+100万" onclick="plus1000000()">
+         </form>
+        </div>  
+
+        <div id="plus10000000">
+            <form id ="form10000000" name="test_form" onsubmit="return AddTable();">
+               <input id="form10000000b" type="button" value="+1000万" onclick="plus10000000()">
+             </form>
+            </div>  
+    
+         <div id="plus100000000">
+            <form id ="form100000000" name="test_form" onsubmit="return AddTable();">
+                   <input id="form100000000b" type="button" value="+1億" onclick="plus100000000()">
+            </form>
+            </div> 
+    </div>
+
+    <div id =switch>
+        <div id="addp5">
+        <form id = "faddp5" name ="test_form" onsubmit="return AddTable();">
+                <input id="fadd5b" type="button" value="add5(20個必要)" onclick="addp5()">
+        </form>
+        </div>
+
+        
+        <form id = "forma100" name ="fadd100" onsubmit="return AddTable();">
+            <input id="fadd100b" type="button" value="add100(500個必要)" onclick="addp100()">
+         </form>
+        
+         <form id = "forma1000" name ="fadd1000" onsubmit="return AddTable();">
+            <input id="fadd1000b" type="button" value="add1000(5000個必要)" onclick="addp1000()">
+         </form>
+
+            
+         <form id = "forma10000" name ="fadd10000" onsubmit="return AddTable();">
+            <input id="fadd10000b" type="button" value="add10000(10万個必要)" onclick="addp10000()">
+         </form>
+
+         <form id = "forma100000" name ="fadd100000" onsubmit="return AddTable();">
+            <input id="fadd100000b" type="button" value="add100000(要150万個)" onclick="addp100000()">
+         </form>
+
+         
+         <form id = "forma1000000" name ="fadd1000000" onsubmit="return AddTable();">
+            <input id="fadd1000000b" type="button" value="add100万(要1500万個)" onclick="addp1000000()">
+         </form>
+
+         <form id = "forma10000000" name ="fadd10000000" onsubmit="return AddTable();">
+            <input id="fadd10000000b" type="button" value="add1000万(要1.5億個)" onclick="addp10000000()">
+         </form>
+
+         <form id = "forma100000000" name ="fadd100000000" onsubmit="return AddTable();">
+            <input id="fadd100000000b" type="button" value="add1億(要20億個)" onclick="addp100000000()">
+         </form>
+    </div>
+
+    <div id = autoswitch>
+        <div id ="auto1">
+            <form id ="a1f" name ="auto1f" onsubmit="return AddTable();">
+                <input id="a1fb" type="button" value="+1/s(100個必要)" onclick="auto1()">
+            </form>
+        </div>
+
+        <div id ="auto10">
+            <form id ="a10f" name ="auto10f" onsubmit="return AddTable();">
+                <input id="a10fb" type="button" value="+10/s(950個必要)" onclick="auto10()">
+            </form>
+        </div>
+
+        <div id ="auto100">
+            <form id ="a100f" name ="auto100f" onsubmit="return AddTable();">
+                <input id="a100fb" type="button" value="+100/s(要9300個)" onclick="auto100()">
+            </form>
+        </div>
+
+        <div id ="auto10000">
+            <form id ="a10000f" name ="auto10000f" onsubmit="return AddTable();">
+                <input id="a10000fb" type="button" value="+10000/s(要92万個)" onclick="auto10000()">
+            </form>
+        </div>
+
+        <div id ="auto1000000">
+            <form id ="a1000000f" name ="auto1000000f" onsubmit="return AddTable();">
+                <input id="a1000000fb" type="button" value="+100万/s(要9千万個)" onclick="auto1000000()">
+            </form>
+        </div>
+    </div>
+
+        <div id="autoplusing" ></div>
+
+        <script type="text/javascript" src="Kclickerv.1.js">
+        </script>
+
+    </body>
+</html>

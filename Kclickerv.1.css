@@ -1,0 +1,327 @@
+body{
+    margin: 20px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+.main{
+    display: grid; width: 100vw; height: 100vh;
+    grid-template-areas: "a b" "a c" "a d";
+    grid-template-columns: 8em 1fr;
+    grid-template-rows: 30% 35% 35%;
+}
+#titlearea{grid-area: a;}
+
+#handybuttons{grid-area: b; padding-left: 0%;}
+
+#switch{grid-area: c; padding-left: 30%;}
+
+#autoswitch{grid-area: d;  padding-left: 65%;}
+
+#maintitle{
+    background-color: aquamarine;
+    color: palevioletred;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center ;
+}
+
+#kentou{
+    font-size: 200px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#plus1b{
+    background-color: azure;
+    color: black;
+    padding: 10px 10px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba darkgoldenrod;
+    width: 100px;
+    font-size: 20px;
+    display: block;
+
+}
+
+#form5b{
+    background-color: azure;
+    color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba darkgoldenrod;
+    width: 100px;
+    font-size: 20px;
+    display: block;
+}
+
+#fadd5b{
+    background-color: azure;
+    color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba darkgoldenrod;
+    width: 250px;
+    font-size: 20px;
+    display: block;
+}
+
+#form100b{
+    background-color: azure;
+    color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba darkgoldenrod;
+    width: 100px;
+    font-size: 20px;
+    display: block;
+}
+
+
+#form1000b{
+    background-color: azure;
+    color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba darkgoldenrod;
+    width: 100px;
+    font-size: 20px;
+    display: block;
+}
+
+#form10000b{
+    background-color: azure;
+    color: black;
+    padding: 10px ;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba darkgoldenrod;
+    width: 100px;
+    font-size: 20px;
+    display: block;
+}
+
+#form100000b{
+    background-color: azure;
+    color: black;
+    padding: 10px ;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba darkgoldenrod;
+    width: 100px;
+    font-size: 20px;
+    display: block;
+}
+
+#form1000000b{
+    background-color: azure;
+    color: black;
+    padding: 10px ;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba darkgoldenrod;
+    width: 100px;
+    font-size: 20px;
+    display: block;
+}
+
+#form10000000b{
+    background-color: azure;
+    color: black;
+    padding: 10px ;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba darkgoldenrod;
+    width: 100px;
+    font-size: 20px;
+    display: block;
+}
+
+#form100000000b{
+    background-color: azure;
+    color: black;
+    padding: 10px ;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba darkgoldenrod;
+    width: 100px;
+    font-size: 20px;
+    display: block;
+}
+
+#form1000000000b{
+    background-color: azure;
+    color: black;
+    padding: 10px ;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba darkgoldenrod;
+    width: 100px;
+    font-size: 20px;
+    display: block;
+}
+
+#fadd100b{
+    background-color: azure;
+    color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba darkgoldenrod;
+    width: 250px;
+    font-size: 20px;
+    display: block;
+}
+
+#fadd1000b{
+    background-color: azure;
+    color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba darkgoldenrod;
+    width: 250px;
+    font-size: 20px;
+    display: block;
+}
+
+#fadd10000b{
+    background-color: azure;
+    color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba darkgoldenrod;
+    width: 250px;
+    font-size: 20px;
+    display: block;
+}
+
+#fadd100000b{
+    background-color: azure;
+    color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba darkgoldenrod;
+    width: 250px;
+    font-size: 20px;
+    display: block;
+}
+
+
+#fadd1000000b{
+    background-color: azure;
+    color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba darkgoldenrod;
+    width: 250px;
+    font-size: 20px;
+    display: block;
+}
+
+#fadd10000000b{
+    background-color: azure;
+    color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba darkgoldenrod;
+    width: 250px;
+    font-size: 20px;
+    display: block;
+}
+
+#fadd100000000b{
+    background-color: azure;
+    color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba darkgoldenrod;
+    width: 250px;
+    font-size: 20px;
+    display: block;
+}
+
+#fadd1000000000b{
+    background-color: azure;
+    color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba darkgoldenrod;
+    width: 250px;
+    font-size: 20px;
+    display: block;
+}
+
+#a1fb{
+    background-color: azure;
+    color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba darkgoldenrod;
+    width: 250px;
+    font-size: 20px;
+    display: block;
+}
+
+#a10fb{
+    background-color: azure;
+    color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba darkgoldenrod;
+    width: 250px;
+    font-size: 20px;
+    display: block;
+}
+
+#a100fb{
+    background-color: azure;
+    color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba darkgoldenrod;
+    width: 250px;
+    font-size: 20px;
+    display: block;
+}
+
+#a10000fb{
+    background-color: azure;
+    color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba darkgoldenrod;
+    width: 250px;
+    font-size: 20px;
+    display: block;
+}
+
+#a1000000fb{
+    background-color: azure;
+    color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba darkgoldenrod;
+    width: 250px;
+    font-size: 20px;
+    display: block;
+}
+
+#forma5{
+    text-align: right;
+}
+
+#klog{
+    font-size: 15px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#amountK{
+    font-size: 60px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+ #timer{
+    background-color: lightblue;
+    font-size: 30px;
+    height: 60px;
+    line-height: 60px;
+    margin-bottom: 15px;
+    text-align: right;
+    width: 200px;
+    padding-right: 20px;
+  }
